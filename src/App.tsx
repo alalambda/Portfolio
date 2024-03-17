@@ -7,6 +7,11 @@ function App() {
     <header className="nav">
       <nav className="nav__container__actions">
         <ul>
+        <li>
+            <Link activeClass="active" smooth spy to="home">
+              home
+            </Link>
+          </li>
           <li>
             <Link activeClass="active" smooth spy to="about">
               about
@@ -30,6 +35,14 @@ function App() {
         </ul>
       </nav>
     </header>
+
+    <section id="home">
+      <div className="content">
+        <h1>LAMBDALOGUE.</h1>
+        <p>nostalgia for the present.</p>
+      </div>
+    </section>
+
     <section id="about">
       <div className="content">
         <div>about</div>
@@ -45,9 +58,16 @@ function App() {
         </div>
       </div>
     </section>
+
     <section id="work">work</section>
+
     <section id="contact">contact</section>
+
     <section id="coffee">buy me coffee</section>
+
+    <footer>
+      <small>&copy; {new Date().getFullYear()} Lambdalogue. All rights reserved.</small>
+    </footer>
   </div>
   );
 }
